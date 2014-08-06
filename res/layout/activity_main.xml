@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.whlabs.toquetin.MainActivity$PlaceholderFragment" >
+    
+     <TextView
+        android:id="@+id/contador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="124dp"
+        android:text="Tus Toquetines" />
+	<LinearLayout 
+	    android:id="@+id/adView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+	<TextView
+	    android:id="@+id/contador"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/adView"
+	    android:text="@string/hello_world" />
+
+<!-- 	<Button
+	    android:id="@+id/tocame"
+	    android:layout_width="fill_parent"
+	    android:layout_height="200dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="51dp"
+	    android:onClick="tocame"
+	    android:text="tocame" /> -->
+	
+	<ImageButton
+        android:id="@+id/tocame"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="51dp"
+	    android:onClick="tocame"
+        android:src="@drawable/boton_normal" />
+
+	<LinearLayout
+	    android:id="@+id/adView2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true" >
+	</LinearLayout>
+
+	<RatingBar
+	    android:id="@+id/ratingBar1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/contador"
+	    android:layout_marginTop="16dp" />
+
+</RelativeLayout>
